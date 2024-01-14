@@ -1,0 +1,20 @@
+```java
+
+SELECT count(USER_ID) AS "USERS"
+FROM USER_INFO
+WHERE AGE <= 29 AND AGE >= 20 AND to_char(JOINED, 'YYYY') = '2021';
+-- WHERE AGE <= 29 AND AGE >= 20 AND TO_CHAR(JOINED, 'YYYY') = '2021';
+
+```
+
+
+
+```java
+
+-- 코드를 입력하세요
+SELECT COUNT(USER_ID) AS 'USERS'
+FROM USER_INFO
+WHERE AGE <= 29 AND AGE >= 20 AND JOINED LIKE '2021%';
+
+```
+
